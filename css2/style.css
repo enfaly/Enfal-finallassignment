@@ -10,7 +10,7 @@
         top: 300px;
         left: 1500px;
     }
-    #Homepagefoto{
+    .Homepagefoto{
         height: 200px;
         width: 400px;
     }
@@ -35,7 +35,13 @@
         position: relative;
         top: 500px;
     }
-    #menuToggle
+    #cookie{
+        position: fixed;
+        color: #FFF;
+        opacity: 50%; background-color: #FA0;
+        top: 95%;
+        right: 5px;
+    }    #menuToggle
     {
         display: none;
       display: block;
@@ -66,7 +72,6 @@
     
     #menuToggle input
     {
-        display: none;
       display: block;
       width: 40px;
       height: 32px;
@@ -92,7 +97,7 @@
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-      display: none;
+      
       background: #cdcdcd;
       border-radius: 3px;
       
@@ -179,6 +184,7 @@
     {
       transform: none;
     }
+   
     /*bestdestination*/
     #grid{
         display: grid;
@@ -206,16 +212,49 @@
     #Dubai{
         height: 300px;
         width: 300px;
+        position: relative;
+        top: 50px;
     }
     #moskee{
         height: 300px;
         width: 300px;
+        position: relative;
+        left: 300px;
+        bottom: 250px;
     }
     #Tunesie{
         height: 300px;
         width: 300px;
+        position: relative;
+        left: 600px;
+        bottom: 550px;
     }
-   
+    #cookiestatement{
+        position: fixed;
+        color: #FFF;
+        opacity: 50%; background-color: #FA0;
+        top: 680px;
+        left: 1400px;
+    }
+   /*contact*/
+   #Tunesiecontact{
+       position: relative;
+       width: 200px;
+       left: 750px;
+       bottom: 350px;
+   }
+   #Moskeecontact{
+        position: relative;
+        width: 200px;
+        left: 750px;
+        bottom: 300px;
+   }
+   #Dubaicontact{
+    position: relative;
+    width: 200px;
+    left: 750px;
+    bottom: 250px;
+   }
 }
 
 @media screen and (min-width:481px) and (max-width:1179px) {
@@ -224,15 +263,16 @@
     }
     li{
         display: inline;
+        background-color: gray;
     }
     #movie{
         width: 200px;
         position: relative;
-        top: 250px;
+        
     }
     #trends{
         position: relative;
-        bottom: 150px;
+        bottom: 10px;
     }
     #title1{
         margin-left: 300px;
@@ -259,12 +299,20 @@
     #title{
         margin-left: 300px;
     }
-    #Homepagefoto{
+    .Homepagefoto{
         height: 100px;
         width: 200px;
     }
+    #cookie{
+        position: fixed;
+        color: #FFF;
+        opacity: 50%; background-color: #FA0;
+        top: 95%;
+        right: 5px;
+    }
     #menuToggle
     {
+        display: none;
       display: block;
       position: relative;
       top: 50px;
@@ -279,6 +327,7 @@
     #menuToggle a
     {
         display: none;
+        display: none;
       text-decoration: none;
       color: #232323;
       font-size: 10px;
@@ -287,12 +336,14 @@
     
     #menuToggle a:hover
     {
+        display: none;
       color: tomato;
     }
     
     
     #menuToggle input
     {
+        display: none;
       display: block;
       width: 40px;
       height: 32px;
@@ -313,6 +364,7 @@
      */
     #menuToggle span
     {
+        display: none;
       display: block;
       width: 33px;
       height: 4px;
@@ -413,48 +465,65 @@
     #article4{
         display: none;
     }
-    #Tunesie{
-        display: none;
-    }
     #Dubai{
-        width: 100px;
+        width: 300px;
     }
     #moskee{
-        width: 100px;
+        width: 300px;
+        position: relative;
+        left: 300px;
+        bottom: 140px;
     }
+   #Tunesie{
+       display: none;
+   }
     #article6{
        grid-column: 1/3;
     }
-
+    #Tunesiecontact{
+        position: relative;
+        width: 200px;
+        left: 750px;
+        bottom: 350px;
+    }
+    #Moskeecontact{
+         position: relative;
+         width: 200px;
+         left: 750px;
+         bottom: 300px;
+    }
+    #Dubaicontact{
+     position: relative;
+     width: 200px;
+     left: 750px;
+     bottom: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    #title{
-        font-size: 10px;
-    }
     #Logo{
         display: none;
     }
-    #Nav{
+    #nav{
         display: none;
     }
     #trends{
-        font-size: 3px;
+        font-size: 10px;
     }
     #headpagetitle{
-        font-size: 5px;
+        font-size: 20px;
     }
     #title{
         margin-left: 200px;
     }
-    #text{
-        font-size: 5px;
+    .text{
+        font-size: 15px;
         width: 500px;
     }
     #movie{
         display: none;
     }
-    #Homepagefoto{
+    .Homepagefoto{
         height: 50px;
         width: 200px;
     }
@@ -463,7 +532,7 @@
         width: 100px;
     }
     #copyright{
-        font-size: 5;
+        font-size: 0;
     }
     #title1{
         margin-left: 300px;
@@ -486,32 +555,216 @@
         display: flex;
         flex-direction: row-reverse;
     }
+    #cookie{
+        position: fixed;
+        color: #FFF;
+        opacity: 50%; background-color: #FA0;
+        top: 95%;
+        right: 5px;
+    }
+    a
+    {
+      text-decoration: none;
+      color: #232323;
+      
+      transition: color 0.3s ease;
+    }
+    
+    a:hover
+    {
+      color: tomato;
+    }
+    
     #menuToggle
+    {
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      
+      z-index: 1;
+      
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      
+      -webkit-touch-callout: none;
+    }
+    
+    /*
+     * Just a quick hamburger
+     */
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #cdcdcd;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      opacity: 1;
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+    #menu
+    {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 0;
+      padding: 50px;
+      padding-top: 125px;
+      right: -100px;
+      
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    
+    /*
+     * And let's fade it in from the left
+     */
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+      opacity: 1;
+    }
+    
+    
+
+
+
+
+/*bestdestinations*/
+#article4, #article6{
+    display: none;
+}
+#Dubai, #moskee, #Tunesie{
+    width: 200px;
+}
+#article2{
+    position: relative;
+    top:290px ;
+}
+#article3{
+    position: relative;
+    bottom:260px ;
+}
+#article1{
+    position: relative;
+    top:850px ;
+}
+#article5{
+    position: relative;
+    bottom:750px ;
+}
+#cookiestatement{
+    position: fixed;
+    color: #FFF;
+    opacity: 50%; background-color: #FA0;
+}
+/*tickets*/
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
 {
   display: block;
-  position: relative;
+  position: absolute;
   top: 50px;
-  left: 50px;
-  font-size: 10px;
+  right: 50px;
+  
   z-index: 1;
   
   -webkit-user-select: none;
   user-select: none;
 }
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  font-size: 10px;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
 
 #menuToggle input
 {
@@ -588,6 +841,7 @@
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
+  opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -599,9 +853,10 @@
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
+  right: -100px;
   
   background: #ededed;
   list-style-type: none;
@@ -609,7 +864,7 @@
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -621,29 +876,28 @@
 }
 
 /*
- * And let's slide it in from the left
+ * And let's fade it in from the left
  */
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  opacity: 1;
 }
-/*bestdestinations*/
-#article4, #article6{
-    display: none;
-}
-#Dubai, #moskee, #Tunesie{
-    width: 200px;
-}
-#article2{
-    display: grid;
-    grid-column: 1/3;
-}
-#article1{
-    display: grid;
-}
-#article5{
-    display: grid;
-}
-/*tickets*/
 
+  /* contact */
+  #Tunesiecontact{
+    position: relative;
+    width: 200px;
+    
+}
+#Moskeecontact{
+     position: relative;
+     width: 200px;
+     
+}
+#Dubaicontact{
+ position: relative;
+ width: 200px;
+
+}
 }

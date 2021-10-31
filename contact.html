@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="css2/style.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Tui</h1>
-    <h2>Discover your smile</h2>
+    <link rel="stylesheet" href="css2/style.css">
     <title>Document</title>
 </head>
-<nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-      </ul>
-    </div>
-  </nav>
-<nav id="nav">
-    <ul>
-        <li id="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren/bestdestinations.html">bestdestinations</a></li>
-        <li id="Nav">tickets</li>
-        <li id="Nav">contact</li>
-    </ul>
-</nav>
+
+
 <body>
+    <header>
+        <h1>Tui</h1>
+        <h2>Discover your smile</h2>
+    </header>
+    <nav role="navigation">
     
-</body>
+        <section id="menuToggle">
+            <input type="checkbox" />
+          
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          
+          <ul id="menu">
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/index.html">home</a></li>
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/bestdestinations.html">bestdestinations</a></li>
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/tickets.html">tickets</a></li>
+          </ul>
+        </section>
+      </nav>
+    
+      <nav id="nav">
+        <ul>
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/index.html">home</a></li>
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/tickets.html">tickets</a></li>
+            <li class="Nav"><a href="file:///C:/Users/enfal/OneDrive/Bureaublad/html/opdracht%20inleveren2/bestdestinations.html">bestdestinations</a></li>
+        </ul>
+    </nav>
+<form action="/action_page.php">
+ <fieldset>
+  <legend>uw vragen:</legend>
+  <label for="fname"> name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Email:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="message">message:</label>
+  <input type="text" id="message" name="message"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+
+<aside>
+    <a href="https://www.tui.nl/ ">
+    <img id="Tunesiecontact" src="img2/Tunesie.jpg" alt="Tunesie"> 
+    </a>
+</aside>
+<aside>
+    <a href="https://www.tui.nl/ ">
+    <img id="Moskeecontact" src="img2/moskee.jpg" alt="moskee">
+</a>
+</aside>
+<aside>
+    <a href="https://www.tui.nl/ ">
+    <img id="Dubaicontact" src="img2/Dubai.jpg" alt="Dubai">
+</a>
+</aside>
+<footer>
+    &copy;Enfal Aydin
+</footer>
+<p id="cookie">cookie statement</p>
+    
+
+
 </html>
